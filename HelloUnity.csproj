@@ -291,6 +291,7 @@
     <Compile Include="Assets\Script\ForLoop.cs" />
     <Compile Include="Assets\Script\IfStatement.cs" />
     <Compile Include="Assets\Script\InstantiateScript.cs" />
+    <Compile Include="Assets\Script\LerpScript.cs" />
     <Compile Include="Assets\Script\LookAtScript.cs" />
     <Compile Include="Assets\Script\MouseEvent.cs" />
     <Compile Include="Assets\Script\TransformScript.cs" />
