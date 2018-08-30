@@ -6,6 +6,7 @@ public class TransformScript : MonoBehaviour {
 
 
     public int speed=2;
+    public int rotateSpeed = 10;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,13 +18,22 @@ public class TransformScript : MonoBehaviour {
         //transform.Translate(Vector3.forward*speed* Time.deltaTime);
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Translate(Vector3.up * speed * Time.deltaTime);
+            transform.Translate(Vector3.forward * speed * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Translate(Vector3.down * speed * Time.deltaTime);
+            transform.Translate(-Vector3.forward * speed * Time.deltaTime);
         }
-        
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(Vector3.up*rotateSpeed*Time.deltaTime);
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(-Vector3.up * rotateSpeed * Time.deltaTime);
+        }
     }
 }
