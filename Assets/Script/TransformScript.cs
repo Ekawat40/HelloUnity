@@ -14,8 +14,16 @@ public class TransformScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         // transform.Translate(new Vector3(0, 0, 1)*Time.deltaTime);
-        transform.Translate(Vector3.forward*speed* Time.deltaTime);
+        //transform.Translate(Vector3.forward*speed* Time.deltaTime);
+        if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
+        }
 
-
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
+        }
+        
     }
 }
