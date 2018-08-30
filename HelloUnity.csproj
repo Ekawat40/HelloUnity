@@ -290,6 +290,7 @@
     <Compile Include="Assets\Script\EnabledScript.cs" />
     <Compile Include="Assets\Script\ForLoop.cs" />
     <Compile Include="Assets\Script\IfStatement.cs" />
+    <Compile Include="Assets\Script\MouseEvent.cs" />
     <Compile Include="Assets\Script\TransformScript.cs" />
     <Compile Include="Assets\Script\Variable.cs" />
     <Compile Include="Assets\Script\WhileLoop.cs" />
