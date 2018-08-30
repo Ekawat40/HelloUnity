@@ -285,6 +285,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\DestroyScript.cs" />
     <Compile Include="Assets\Script\DoWhileLoop.cs" />
     <Compile Include="Assets\Script\ForLoop.cs" />
     <Compile Include="Assets\Script\IfStatement.cs" />
